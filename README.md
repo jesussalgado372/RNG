@@ -15,4 +15,4 @@ Don't forget to have fun!!!
 
 //
 
-// Peer Review:
+// Peer Review: Darcy Rose - the font is kind of hard to read over the coding backgrounds, it might be a good idea to have the coding image as a full screen background and do a solid div with some opacity. That way you could still see the background but the text won't be so obscured. The code itself is solid though, well done.
