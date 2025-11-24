@@ -11,13 +11,32 @@ body {
 }
 .gridOne {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr; /* Left side bigger */
   gap: 10px;
-  
+
+  grid-template-areas:
+    "main p2 p4"
+    "p1   p3 p5";
 }
+
+/* Assign each card a position */
+.main-card { grid-area: main; }
+.p1 { grid-area: p1; }
+.p2 { grid-area: p2; }
+.p3 { grid-area: p3; }
+.p4 { grid-area: p4; }
+.p5 { grid-area: p5; }
+
+
 @media (max-width: 768px) {
   .gridOne {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "p1"
+      "p2"
+      "p3"
+      "p4"
+      "p5";
   }
 }
