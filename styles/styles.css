@@ -11,7 +11,7 @@ body {
 }
 .gridOne {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr; /* Left side bigger */
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 10px;
 
   grid-template-areas:
@@ -19,7 +19,6 @@ body {
     "p1   p3 p5";
 }
 
-/* Assign each card a position */
 .main-card { grid-area: main; }
 .p1 { grid-area: p1; }
 .p2 { grid-area: p2; }
