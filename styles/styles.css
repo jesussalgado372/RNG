@@ -1,0 +1,23 @@
+body {
+  background-color: darkslategray;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 13px;
+  box-shadow: 5px 5px 15px #0000004b;
+  margin: 10px;
+}
+.gridOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+@media (max-width: 768px) {
+  .gridOne {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
