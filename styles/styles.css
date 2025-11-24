@@ -32,7 +32,6 @@ body {
   z-index: 1;
 }
 
-
 .gridOne {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
