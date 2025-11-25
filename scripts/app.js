@@ -4,6 +4,7 @@ let codeStackEmail = document.getElementById("codeStackEmail");
 let personalEmail = document.getElementById("personalEmail");
 let summonBtn = document.getElementById("summonBtn");
 let previousCards = document.querySelectorAll(".previous-card");
+let lastStudent = null;
 
 let previousStudents = [];
 
@@ -37,17 +38,21 @@ summonBtn.addEventListener("click", () => {
   getData().then((students) => {
     let randomStudent = randomizeData(students);
 
-    previousStudents.unshift(randomStudent);
+    if (lastStudent !== null) {
+      previousStudents.unshift(lastStudent);
 
-    if (previousStudents.length > 5) {
-      previousStudents.pop();
+      if (previousStudents.length > 5) {
+        previousStudents.pop();
+      }
+
+      updatePreviousCards();
     }
-
-    updatePreviousCards();
 
     firstName.innerText = randomStudent.firstName;
     lastName.innerText = randomStudent.lastName;
     codeStackEmail.innerText = randomStudent.codeStackEmail;
     personalEmail.innerText = randomStudent.personalEmail;
+
+    lastStudent = randomStudent;
   });
 });
