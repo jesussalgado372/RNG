@@ -1,15 +1,12 @@
 body {
   background-color: darkslategray;
+  background-image: url(/assets/coder-pic.jpg);
+  background-size: cover;
 }
 
 .card {
   position: relative;
-  color: white;
-  background-image: url(/assets/coder-pic.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background-color: white;
   padding: 10px;
   border-radius: 13px;
   box-shadow: 5px 5px 15px #0000004b;

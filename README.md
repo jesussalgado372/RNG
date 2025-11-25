@@ -13,6 +13,8 @@ You also need to have a section that shows the previous 5 names that were pulled
 Don't forget to have fun!!!
 */
 
-//
+/*
+11/25/2025 - adjusted the background on the cards and for the whole site
+*/
 
 // Peer Review: Darcy Rose - the font is kind of hard to read over the coding backgrounds, it might be a good idea to have the coding image as a full screen background and do a solid div with some opacity. That way you could still see the background but the text won't be so obscured. The code itself is solid though, well done.
