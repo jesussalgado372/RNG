@@ -5,6 +5,7 @@ body {
 }
 
 .card {
+  color: white;
   max-width: 100%;
   position: relative;
   background-color: white;
