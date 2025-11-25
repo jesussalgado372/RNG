@@ -5,6 +5,7 @@ body {
 }
 
 .card {
+  max-width: 100%;
   position: relative;
   background-color: white;
   padding: 10px;
@@ -56,6 +57,17 @@ body {
 }
 .p5 {
   grid-area: p5;
+}
+
+@media (max-width: 1024px) {
+  .gridOne {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "main  main"
+      "p1    p2"
+      "p3    p4"
+      "p5    p5";
+  }
 }
 
 @media (max-width: 768px) {
